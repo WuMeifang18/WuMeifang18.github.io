@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="最近参加牛客网的笔试，卡在了笔试的输入输出上，所以过来总结一下。牛客网上的 While(scanner.hasNextInt()){} 循环在本地的IDE上是错误的程序会一直等待。遇到这种情况，有两种办法，一种是按照自己在本地IDE上写输入的方法进行输入。另一种是学习下面的方法。补充：不一定要将所以的输入储存，可以输入一组进行操作后输出，在输入下一组。#一、常见输入格式和应对方法：| 常见的输入格">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/06/20/hello-world/index.html">
+<meta property="og:title" content="oj">
+<meta property="og:url" content="http://yoursite.com/2020/06/20/oj/index.html">
 <meta property="og:site_name" content="Meifang">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="最近参加牛客网的笔试，卡在了笔试的输入输出上，所以过来总结一下。牛客网上的 While(scanner.hasNextInt()){} 循环在本地的IDE上是错误的程序会一直等待。遇到这种情况，有两种办法，一种是按照自己在本地IDE上写输入的方法进行输入。另一种是学习下面的方法。补充：不一定要将所以的输入储存，可以输入一组进行操作后输出，在输入下一组。#一、常见输入格式和应对方法：| 常见的输入格">
 <meta property="article:published_time" content="2020-06-20T15:19:23.331Z">
-<meta property="article:modified_time" content="2020-06-20T15:19:23.331Z">
+<meta property="article:modified_time" content="2020-06-22T11:27:50.780Z">
 <meta property="article:author" content="Meifang">
 <meta name="twitter:card" content="summary">
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/06/20/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/06/20/oj/"/>
 
 
 
 
 
-  <title>Hello World | Meifang</title>
+  <title>oj | Meifang</title>
   
 
 
@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/20/oj/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meifang">
@@ -278,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">oj</h1>
         
 
         <div class="post-meta">
@@ -328,19 +328,24 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>最近参加牛客网的笔试，卡在了笔试的输入输出上，所以过来总结一下。牛客网上的 While(scanner.hasNextInt()){} 循环在本地的IDE上是错误的程序会一直等待。遇到这种情况，有两种办法，一种是按照自己在本地IDE上写输入的方法进行输入。另一种是学习下面的方法。<br>补充：不一定要将所以的输入储存，可以输入一组进行操作后输出，在输入下一组。<br>#一、常见输入格式和应对方法：<br>| 常见的输入格式 | 应对方法 |<br>|  :—-: | :—-:|<br>|预先不输入数组长度|    读到文件结尾|<br>|预先输入数组长度|先读出组数，然后循环|<br>|只有一组数据    |直接读|</p>
+<ol>
+<li>没有组数</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Scanner scanner &#x3D; new Scanner(System.in);</span><br><span class="line">While(scanner.hasNextInt())&#123;</span><br><span class="line">    int a &#x3D; scanner.nextInt();</span><br><span class="line">    int b &#x3D; scanner.nextInt();</span><br><span class="line">    System.out.println(a+b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>组数 + 循环输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Scanner scanner &#x3D; new Scanner(System.in);</span><br><span class="line">int n &#x3D; scanner.nextInt();</span><br><span class="line">for(int i &#x3D; 0; i &lt; n; i++)&#123;</span><br><span class="line">    int a &#x3D; scanner.nextInt();</span><br><span class="line">    int b &#x3D; scanner.nextInt();</span><br><span class="line">    System.out.println(a+b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>直接读<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a &#x3D; scanner.nextInt();</span><br><span class="line">int b &#x3D; scanner.nextInt();</span><br><span class="line">System.out.println(a+b);</span><br></pre></td></tr></table></figure>
+#二、常见问题的模板<br>##1.预先不输入数组长度<br>输入一个不知道大小的二维数组<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 2 3</span><br><span class="line">4 5 6</span><br><span class="line">7 8 9</span><br></pre></td></tr></table></figure>
+相应的代码为<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import java.util.*;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">        Scanner sc &#x3D; new Scanner(System.in);</span><br><span class="line">        ArrayList&lt;String&gt; arrayList &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        while(sc.hasNextLine())&#123;</span><br><span class="line">            arrayList.add(sc.nextLine());</span><br><span class="line">        &#125;</span><br><span class="line">        int row &#x3D; arrayList.size();</span><br><span class="line">        int[][] arr &#x3D; new int[row][];</span><br><span class="line">        for(int i &#x3D; 0; i &lt; row; i++)&#123;</span><br><span class="line">            String[] s &#x3D; arrayList.get(i).split(&quot; &quot;);</span><br><span class="line">            int col &#x3D; s.length;</span><br><span class="line">            arr[i] &#x3D; new int[col];</span><br><span class="line">            for(int j &#x3D; 0; j &lt; col; j++) &#123;</span><br><span class="line">                arr[i][j] &#x3D; Integer.parseInt(s[j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+##2.预先输入数组长度<br>第一行表示测试数据的组数N<br>接下来每组开头是操作次数M<br>接着是M行操作</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">3</span><br><span class="line">push 1</span><br><span class="line">push 2</span><br><span class="line">pop</span><br><span class="line">2</span><br><span class="line">push 3</span><br><span class="line">pop</span><br></pre></td></tr></table></figure>
+<p>相应的代码为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">        Scanner sc &#x3D; new Scanner(System.in);</span><br><span class="line">        int N &#x3D; sc.nextInt();</span><br><span class="line">        sc.nextLine(); &#x2F;&#x2F;跳过本行， 这一行非常重要。返回的是这一行除N外的字符串，包括N后面的空格符。</span><br><span class="line">        String[][] op &#x3D; new String[N][];</span><br><span class="line">        for(int i &#x3D; 0; i &lt; N; i++)&#123;</span><br><span class="line">            int M &#x3D; sc.nextInt();</span><br><span class="line">            sc.nextLine();&#x2F;&#x2F;跳过本行</span><br><span class="line">            op[i] &#x3D; new String[M];</span><br><span class="line">            for(int j &#x3D; 0; j &lt; M; j++)&#123;</span><br><span class="line">                op[i][j] &#x3D; sc.nextLine();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对于 push 1 可以用字符切割函数分别获取push 和 1</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> String[] push &#x3D; op[i][j].split(&quot; &quot;);</span><br><span class="line">int num &#x3D; push[1];</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
     </div>
@@ -425,17 +430,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -491,22 +487,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
