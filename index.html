@@ -260,6 +260,127 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/24/css/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meifang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meifang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/09/24/css/" itemprop="url">css基本语法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-24T20:27:07+08:00">
+                2020-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#1.什么是CSS<br><strong>层叠样式表</strong>(Cascading Style Sheets)是一种用来表现HTML或XML等文件样式的计算机语言。CSS不仅可以<strong>静态地修饰网页</strong>，还可以配合各种脚本语言动态地对网页各元素进行格式化。<br>#<br>#2.CSS的引入方式<br>引入方式|格式|<br>:–:|:–:|<br>行内样式|<div style="width:100px;height:100px;"></div>|<br>嵌入式|在head中写入style标签<br><style type="text/css">div{background: red}span{background: blue}</style><br>链接（最常用）|将css脚本放在一个css文档中，在html的head标签中，写入link标签；<br><link href="file.css"  rel="" type="text/css">|<br>导入式|同样准备好css文档，在head中写入<br><style>@import”file.css”;<style>|</p>
+<p><strong>注意</strong>：链接式是html层面写的，导入式是使用css脚本写的；在页面加载时，链接式是先加载好了css文档，再显示html页面；而导入式是先加载html显示出来后，再加载css脚本的效果；所以推荐使用链接式<br>#3.CSS选择器<br>##3.1元素选择器<br>选择器|例子|例子描述<br>:–:|:–:|:–:<br>| .class | .header | 选择 class=”header” 的所有元素。 |<br><em>|</em>|选择所有元素<br>element|p|选择所有<p>元素<br>#id|#U001|选择id=“U001”的所有元素<br>##3.2关系选择器<br>选择器|样式|<br>:–:|:–:|<br>包含选择器| E F<br>子元素选择器| E&gt;F<br>相邻元素选择器|E+F<br>兄弟选择器|E~F<br>#3.3伪类选择器<br>选择器|样式|<br>:–:|:–:|<br>E:hover|选择鼠标指针位于其上的链接<br>#4.选择器的权重<br>!important &gt; 行内 &gt; id &gt; class &gt; 标签 &gt; 通配（<em>）<br>优先级|权重|<br>:–:|:–:|<br>!important|无穷<br>行间样式|1000|<br>‘#’|100,具有唯一性<br>‘.’，属性，伪类|10,在html中用class来定义<br>标签|1<br> 通配（</em>）|0<br>组合的将权重相加，但不能跨级（一个100，大于11个10）<br><strong><em>权重相同时，后者覆盖前者</em></strong><br>#5.选择器表<br><img src="https://upload-images.jianshu.io/upload_images/23179843-73bb8b358d4359f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择器"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/22/hello-hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -553,7 +674,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
