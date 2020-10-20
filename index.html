@@ -354,16 +354,55 @@
         
           
             <p>在上一篇文章中我们已经将博客成功部署到GitHub，接下来，我们需要对博客进行完善。</p>
-<h1 id="1-选择主题"><a href="#1-选择主题" class="headerlink" title="1.选择主题"></a>1.选择主题</h1><p>去hexo的网站选择自己喜欢的主题，<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>可点击主题图片上的眼睛符号进行预览，只有一部分主题可以预览。然后点击主题的名称获得主题的下载地址<br><a href="https://github.com/next-theme/hexo-theme-next" target="_blank" rel="noopener">https://github.com/next-theme/hexo-theme-next</a><br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic1.png" alt="图一"></p>
+<h1 id="1-选择主题"><a href="#1-选择主题" class="headerlink" title="1.选择主题"></a>1.选择主题</h1><p>去hexo的网站选择自己喜欢的主题，<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>可点击主题图片上的眼睛符号进行预览，只有一部分主题可以预览。然后点击主题的名称获得主题的下载地址<br><a href="https://github.com/next-theme/hexo-theme-next" target="_blank" rel="noopener">https://github.com/next-theme/hexo-theme-next</a><br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic1.png" alt="图1"></p>
 <p>在blog目录下打开git，输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;next-theme&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
 <p>上述代码 后半段为克隆网址 + 克隆后的本地位置，过程可能较慢，耐心等待。<br>下载完成后可以看到themes目录下多了一个next文件夹。</p>
-<p>打开配置文件<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic2.png" alt="图二"><br>修改主题为next，如果是其他主题进行相应的修改即可。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic3.png" alt="图三"></p>
+<p>打开配置文件<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic2.png" alt="图2"><br>修改主题为next，如果是其他主题进行相应的修改即可。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic3.png" alt="图3"></p>
 <p>这个时候主题就修改成功了，可以输入 hexo -s 进行本地预览。</p>
-<h1 id="2-设置相应的标签"><a href="#2-设置相应的标签" class="headerlink" title="2.设置相应的标签"></a>2.设置相应的标签</h1><p>可参考这个网站 <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a><br>这里区分<em>站点配置文件</em>和<em>主题配置文件</em>，<em>站点配置文件</em>位于根目录下，<em>主题配置文件</em>位于themes/next 目录下<br>在主题配置文件中修改scheme可以选择不同的next主题。</p>
-<p><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic4.png" alt="图四"><br>在主题配置文件中可以设置语言菜单等等，上面的网站中有详细的介绍。<br>另外在next目录下有一个markdown说明文档可参考。</p>
-<p>注意：</p>
-<h1 id="3-让标签可跳转"><a href="#3-让标签可跳转" class="headerlink" title="3.让标签可跳转"></a>3.让标签可跳转</h1><h1 id="4-上传文章"><a href="#4-上传文章" class="headerlink" title="4.上传文章"></a>4.上传文章</h1>
+<p>这里区分<strong><em>站点配置文件</em></strong> 和<strong><em>主题配置文件</em></strong>，<strong><em>站点配置文件</em></strong>位于根目录下，<strong><em>主题配置文件</em></strong>位于themes/next 目录下<br>在主题配置文件中修改scheme可以选择不同的next主题。</p>
+<p><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic4.png" alt="图4"></p>
+<p>在主题配置文件中可以设置语言菜单等等，上面的网站中有详细的介绍。</p>
+<p>另外在next目录下有一个markdown说明文档可参考。</p>
+<h1 id="2-设置相应的子页面标签"><a href="#2-设置相应的子页面标签" class="headerlink" title="2.设置相应的子页面标签"></a>2.设置相应的子页面标签</h1><p><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic5.png" alt="图5"><br>可参考这个网站 <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a></p>
+<h2 id="2-1-子页面的创建"><a href="#2-1-子页面的创建" class="headerlink" title="2.1 子页面的创建"></a>2.1 子页面的创建</h2><ul>
+<li><p>方法一：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法二：通过admin插件创建</p>
+<p>参考 <a href="https://blog.csdn.net/smileyan9/article/details/86666824" target="_blank" rel="noopener">https://blog.csdn.net/smileyan9/article/details/86666824</a><br>首先安装插件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure>
+<p>浏览器访问localhost:4000/admin。效果如下：<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic6.png" alt="图6"><br>在pages下new一个就好了。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic7.png" alt="图7"></p>
+</li>
+</ul>
+<p>创建好之后，在blog/source/目录下会多出一个文件夹，就是你新建的页面，文件夹下面有一个md文件，后面要用。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic8.png" alt="图8"></p>
+<h2 id="2-2-设置子页面名称和图标和内容等"><a href="#2-2-设置子页面名称和图标和内容等" class="headerlink" title="2.2 设置子页面名称和图标和内容等"></a>2.2 设置子页面名称和图标和内容等</h2><p>打开对应的子页面的md文件，设置页面标题和相应的功能（这些功能是hexo自带的，包括分类、标签等）<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic9.png" alt="图9"><br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic10.png" alt="图10"></p>
+<h2 id="2-3-修改配置文件进行相应的配置"><a href="#2-3-修改配置文件进行相应的配置" class="headerlink" title="2.3 修改配置文件进行相应的配置"></a>2.3 修改配置文件进行相应的配置</h2><p>在主题配置文件中，<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic11.png" alt="图11"></p>
+<p>在主题目录下的此文件中，有对应的中文的翻译<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic12.png" alt="图12"></p>
+<p><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic13.png" alt="图13"><br>在站点配置文件中，做以下修改，设置相应的路径，不然页面可能不能正常调转。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic14.png" alt="图14"></p>
+<h2 id="2-4-可能遇到的问题"><a href="#2-4-可能遇到的问题" class="headerlink" title="2.4 可能遇到的问题"></a>2.4 可能遇到的问题</h2><p>在侧栏点击日志时<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic15.png" alt="图15"><br>可能不能正常跳转，<br>参考 <a href="https://iqiqiya.com/posts/df32273d.html" target="_blank" rel="noopener">https://iqiqiya.com/posts/df32273d.html</a><br>编辑hexo主题目录下/layout/_macro/sidebar.swig<br>将 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;&#123;&#123; url_for(theme.menu.archives).split(&#39;||&#39;)[0] | trim &#125;&#125;&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>修改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;&#123;&#123;url_for(theme.menu.archives.split(&#39;||&#39;)[0])| trim&#125;&#125;&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>即可。</p>
+<h1 id="3-about-子页面"><a href="#3-about-子页面" class="headerlink" title="3.about 子页面"></a>3.about 子页面</h1><p>在关于页面的md文件中编辑内容即可。<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic16.png" alt="图16"></p>
+<h1 id="4-上传文章"><a href="#4-上传文章" class="headerlink" title="4.上传文章"></a>4.上传文章</h1><ul>
+<li><p>创建文章</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post test</span><br></pre></td></tr></table></figure>
+<p>注意：后面可能会遇到要插入图片的问题，可以设置 post_asset_folder: true<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/pic17.png" alt="图17"><br>这样，就会在新建文章的时候，创建一个md文件的同时，创建一个同名的用来放图片的文件夹。<br>通过</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![名称](文件夹名&#x2F;pic.png)</span><br></pre></td></tr></table></figure>
+<p>来引用图片</p>
+</li>
+<li><p>编辑内容</p>
+</li>
+<li><p>本地预览</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li><p>上传</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>ps: 多刷新几遍.</p>
+</li>
+</ul>
+
           
         
       
@@ -511,7 +550,7 @@
 <li><a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">https://www.appinn.com/markdown/</a> 这是介绍markdown书写格式的网站   </li>
 <li><a href="https://www.jianshu.com/p/950f8f13a36c" target="_blank" rel="noopener">https://www.jianshu.com/p/950f8f13a36c</a>  hexo博客图片问题</li>
 </ol>
-<h2 id="1-2-准备工作"><a href="#1-2-准备工作" class="headerlink" title="1.2 准备工作"></a>1.2 准备工作</h2><p>本文针对windows系统，在开始之前，你需要进行一下操作</p>
+<h2 id="1-2-准备工作"><a href="#1-2-准备工作" class="headerlink" title="1.2 准备工作"></a>1.2 准备工作</h2><p>本文针对windows系统，在开始之前，你需要进行以下操作</p>
 <h3 id="1-2-1-注册一个github账号"><a href="#1-2-1-注册一个github账号" class="headerlink" title="1.2.1 注册一个github账号"></a>1.2.1 注册一个github账号</h3><p>去官网注册即可 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
 <h3 id="1-2-2-安装git"><a href="#1-2-2-安装git" class="headerlink" title="1.2.2 安装git"></a>1.2.2 安装git</h3><p>网址：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br>选择相应的版本，需要外网(fq)，不然下载速度很慢。也可以通过其他渠道。<br>安装git可以参考这篇博客：<a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html。" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html。</a>  </p>
 <p>Git安装之后需要进行一些基本信息设置</p>
