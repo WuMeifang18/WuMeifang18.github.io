@@ -445,6 +445,15 @@
   <span class="author" itemprop="copyrightHolder">Meifang</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">2.6k</span>
+  
 </div>
 
 
@@ -596,6 +605,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'j2CiOXNrEaoxUCT3JS9W1uTw-gzGzoHsz',
+        appKey: 'TNnDfE2PxwHost4wz9IGSM53',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -608,7 +639,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("j2CiOXNrEaoxUCT3JS9W1uTw-gzGzoHsz", "TNnDfE2PxwHost4wz9IGSM53");</script>
+  <script>AV.initialize("", "");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
