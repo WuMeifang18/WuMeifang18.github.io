@@ -317,16 +317,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/12/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E6%B5%8F%E8%A7%88%E6%AC%A1%E6%95%B0%E5%8A%9F%E8%83%BD/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/12/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E6%B5%8F%E8%A7%88%E6%AC%A1%E6%95%B0%E5%8A%9F%E8%83%BD/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -339,7 +329,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -423,8 +413,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" rel="next" title="学习网站汇总(持续更新中)">
-                <i class="fa fa-chevron-left"></i> 学习网站汇总(持续更新中)
+              <a href="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" rel="next" title="学习网站汇总">
+                <i class="fa fa-chevron-left"></i> 学习网站汇总
               </a>
             
           </div>
@@ -432,6 +422,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2021/01/03/git-message/" rel="prev" title="Git_message">
+                Git_message <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -462,7 +456,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
     </div>
+
   
 
 
@@ -516,7 +512,7 @@
                 <a href="/archives">
                 <!-- <a href="/archives%7C%7C%20archive"> -->
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -527,7 +523,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -538,7 +534,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -601,7 +597,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2020 &mdash; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -615,7 +611,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">5.2k</span>
   
 </div>
 
@@ -629,6 +625,8 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
 
 
 
@@ -771,28 +769,6 @@
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'j2CiOXNrEaoxUCT3JS9W1uTw-gzGzoHsz',
-        appKey: 'TNnDfE2PxwHost4wz9IGSM53',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 

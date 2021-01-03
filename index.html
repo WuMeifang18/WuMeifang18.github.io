@@ -260,6 +260,806 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meifang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meifang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/" itemprop="url">常用Git操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-03T20:19:01+08:00">
+                2021-01-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:35:39+08:00">
+                2021-01-03
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/" class="leancloud_visitors" data-flag-title="常用Git操作">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count">次</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.3k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="只有自己操作的分支（基础操作）"><a href="#只有自己操作的分支（基础操作）" class="headerlink" title="只有自己操作的分支（基础操作）"></a>只有自己操作的分支（基础操作）</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git pull  &#x2F;&#x2F;  从远程仓库抓取修改的内容，并把它合并到本地库</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; commit之前先&quot;git diff&quot;和&quot;git status&quot;看是否是包含且仅包含这次想commit的内容。</span><br><span class="line"></span><br><span class="line">git commit - m &quot;&quot;</span><br><span class="line"></span><br><span class="line">git push  &#x2F;&#x2F; 将更改推送到远程公共仓库</span><br></pre></td></tr></table></figure>
+
+<h1 id="和别人同时操作的分支"><a href="#和别人同时操作的分支" class="headerlink" title="和别人同时操作的分支"></a>和别人同时操作的分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git stash  &#x2F;&#x2F; 保存本地新增还未提交的代码</span><br><span class="line"></span><br><span class="line">git pull -r </span><br><span class="line"></span><br><span class="line">git stash pop</span><br><span class="line"></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line">git commit - m&quot;&quot;  &#x2F;&#x2F;Git message </span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>Stash可以很好的解决这样的问题。当你不想提交当前完成了一半的代码， 但是你不得不修改一个紧急的bug时，可以使用’git stash’将你当时未提交到本地（和服务器）的代码推入到git的栈中，这时候你的工作区间和上一次提交的内容是完全一样的，所以可以放心的修bug，等到修完bug，提交到服务器上后，再使用’git stash  apply ‘将以前保存的工作应用回来。当你多次使用’git stash’命令后，你 的栈里将充满了未提交的代码，这时候你会对将哪个版本应用回来有些困惑，’git stash list’命令可以将当前的Git栈信息打印出来，你只需要将找到对应的版本号，例如使用’git stash apply stash@{1}’就可以将你指定版本号为stash@{1}的工作取出来，当你将所有的栈都应用回来的时候，可以使用’git stash clear’来将栈清空</p>
+<h1 id="同步-master-分支的代码"><a href="#同步-master-分支的代码" class="headerlink" title="同步 master 分支的代码"></a>同步 master 分支的代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br><span class="line"></span><br><span class="line">git checkout master</span><br><span class="line">git pull origin</span><br><span class="line"></span><br><span class="line">git checkout feature_bugfix  </span><br><span class="line">git merge master  &#x2F;&#x2F;合并master到分支，</span><br><span class="line"></span><br><span class="line">git status</span><br><span class="line">&#x2F;&#x2F;查看冲突</span><br><span class="line">&#x2F;&#x2F;修改冲突的文件</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; head</span><br><span class="line">当前分支</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">要合并的分支</span><br><span class="line">&gt;&gt;&gt;&gt;master</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;修改后，</span><br><span class="line"></span><br><span class="line">git add 文件路径</span><br><span class="line"></span><br><span class="line">git restore 文件路径</span><br><span class="line"></span><br><span class="line">git commit -m &quot;conflict fixed&quot;</span><br><span class="line"></span><br><span class="line">git push origin feature_bugfix</span><br><span class="line"></span><br><span class="line">git merge --abort &#x2F;&#x2F;放弃合并</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>键盘输入i，进入insert状态，在该状态下你可以修改控制台中的文字，填你想填写的内容</li>
+<li>输入完之后，按esc退出insert状态</li>
+<li>按shift + :（注意：当前应处于英文输入法状态），当底部出现冒号之后，再输入w(保存)q(退出)，回车即可</li>
+</ul>
+<h1 id="创建和删除分支"><a href="#创建和删除分支" class="headerlink" title="创建和删除分支"></a>创建和删除分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;在创建新分支之前要 git commit 一次，这样之前分支的文件就不会被带到新的分支</span><br><span class="line">git co -b test  &#x2F;&#x2F; 创建名为test的分支(?基于当前分支？)</span><br><span class="line"></span><br><span class="line">git checkout -b bugFix master &#x2F;&#x2F;基于master分支创建新的分支</span><br><span class="line"></span><br><span class="line">git push origin feature_bugfix &#x2F;&#x2F;将新分支推到远程分支</span><br></pre></td></tr></table></figure>
+
+
+<p>当一个分支被废弃时,我们要做的是删除分支,在彻底删除一个分支时,需要三个步骤</p>
+<ul>
+<li>删除本地分支 (不能位于当前要删除的分支)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch --delete bugFix  &#x2F;&#x2F;git branch -d bugFix  git branch -D bugFix</span><br><span class="line">&#x2F;&#x2F;在使用--delete删除分支时,该分支必须完全和它的上游分支merge完成(了解上游分支,可以点击查看链接),如果没有上游分支,必须要和HEAD完全merge</span><br><span class="line"></span><br><span class="line">-D是--delete --force的缩写,这样写可以在不检查merge状态的情况下删除分支</span><br><span class="line">--force简写-f,作用是将当前branch重置到初始点(startpoint),如果不使用--force的话,git分支无法修改一个已经存在的分支.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除远程分支</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>push origin --delete bugFix```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 删除本地追踪分支,即追踪远程master的追踪分支origin&#x2F;master</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;git branch -d -r origin&#x2F;&lt;remote branch name&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">git  clone  git@gitr:pro</span><br><span class="line"></span><br><span class="line">git  status &#x2F; git st   &#x2F;&#x2F;  查看状态</span><br><span class="line"></span><br><span class="line">git  checkout &#x2F; git co &#x2F;&#x2F; 作用：一是在不同的branch之间进行切换  二是还原代码的作用</span><br><span class="line"></span><br><span class="line">git  diff &#x2F; git df &#x2F;&#x2F;  查看改动</span><br><span class="line"></span><br><span class="line">git  add  abc.txt  &#x2F;&#x2F;  添加修改到缓存，abc.txt为新文件文件名，可变。</span><br><span class="line"></span><br><span class="line">git add  -a &#x2F;&#x2F; (谨慎使用) 添加所有文件到本地库，除了.gitignore文件中的文件</span><br><span class="line"></span><br><span class="line">git  commit  &#x2F; git  ci &#x2F;&#x2F; 提交改变到本地库</span><br><span class="line"></span><br><span class="line">git add</span><br><span class="line"></span><br><span class="line">git  log &#x2F;&#x2F; 查看log日志，查看提交记录</span><br><span class="line"></span><br><span class="line">git log -p  &#x2F;&#x2F;查看日志和改动</span><br><span class="line"></span><br><span class="line">git log --stat   &#x2F;&#x2F;可以查看每次commit修改了哪些文件</span><br><span class="line"></span><br><span class="line">git pull 等价于 git fetch + git merge o&#x2F;master</span><br><span class="line"></span><br><span class="line">gitignore文件  &#x2F;&#x2F; 系统中经常会出现一些.tmp .o或者之类的临时文件，我们可以在顶层工作目录中编辑一个.gitignore文件来告诉系统我们需要忽略哪些类型的文件。</span><br></pre></td></tr></table></figure>
+
+<h1 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git  reset  --hard   回退以前的某个版本（本地仓库） </span><br><span class="line"></span><br><span class="line">eg：</span><br><span class="line">git reset -hard HEAD~3 &#x2F;&#x2F; 将最新的3次提交全部重置，就像没有提交过一样</span><br><span class="line">git reset -hard commit (&amp;&amp;&amp;&amp;&amp;**$%^)  &#x2F;&#x2F; 回退到括号中指定版本号的版本</span><br></pre></td></tr></table></figure>
+
+<h1 id="关闭端口"><a href="#关闭端口" class="headerlink" title="关闭端口"></a>关闭端口</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i :8080 &#x2F;&#x2F;查找8080端口</span><br><span class="line"></span><br><span class="line"> kill -9 57178（PID）  &#x2F;&#x2F;关闭端口</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2021/01/03/async-await/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meifang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meifang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/03/async-await/" itemprop="url">Async/await</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-03T20:16:47+08:00">
+                2021-01-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:17:58+08:00">
+                2021-01-03
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2021/01/03/async-await/" class="leancloud_visitors" data-flag-title="Async/await">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count">次</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  487 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>async functions 和 await 关键字是最近添加到JavaScript语言里面的。它们是ECMAScript 2017 JavaScript版的一部分（参见ECMAScript Next support in Mozilla）。简单来说，它们是基基于promises的语法糖，使异步代码更易于编写和阅读。</p>
+<p>调用该函数会返回一个 promise。这是异步函数的特征之一 —— 它保证函数的返回值为 promise。</p>
+<p>当 await 关键字与异步函数一起使用时，它的真正优势就变得明显了 —— 事实上， await 只在异步函数里面才起作用。它可以放在任何异步的，基于 promise 的函数之前。它会暂停代码在该行上，直到 promise 完成，然后返回结果值。在暂停的同时，其他正在等待执行的代码就有机会执行了。</p>
+<p>Try catch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">async function myFetch() &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    let response &#x3D; await fetch(&#39;coffee.jpg&#39;);</span><br><span class="line">    let myBlob &#x3D; await response.blob();</span><br><span class="line"></span><br><span class="line">    let objectURL &#x3D; URL.createObjectURL(myBlob);</span><br><span class="line">    let image &#x3D; document.createElement(&#39;img&#39;);</span><br><span class="line">    image.src &#x3D; objectURL;</span><br><span class="line">    document.body.appendChild(image);</span><br><span class="line">  &#125; catch(e) &#123;</span><br><span class="line">    console.log(e);</span><br><span class="line">  &#125;&#125;</span><br><span class="line">myFetch();</span><br></pre></td></tr></table></figure>
+
+<p>async/await的缺陷</p>
+<p>了解Async/await是非常有用的，但还有一些缺点需要考虑。<br>Async/await 让你的代码看起来是同步的，在某种程度上，也使得它的行为更加地同步。 await 关键字会阻塞其后的代码，直到promise完成，就像执行同步操作一样。它确实可以允许其他任务在此期间继续运行，但您自己的代码被阻塞。<br>这意味着您的代码可能会因为大量await的promises相继发生而变慢。每个await都会等待前一个完成，而你实际想要的是所有的这些promises同时开始处理（就像我们没有使用async/await时那样）。</p>
+<p>有一种模式可以缓解这个问题——通过将 Promise 对象存储在变量中来同时开始它们，然后等待它们全部执行完毕。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2021/01/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meifang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meifang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" itemprop="url">响应式布局</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-03T20:11:16+08:00">
+                2021-01-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:15:55+08:00">
+                2021-01-03
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2021/01/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" class="leancloud_visitors" data-flag-title="响应式布局">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count">次</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  329 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media 类型 and (条件1) and (条件2)&#123;</span><br><span class="line">        &#x2F;*css样式*&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例如：@media后面的是一个或者多个表达式，如果表达式为真，则应用样式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> *在屏幕宽度小于 600px 的时候，会作用大括号里的内容。</span><br><span class="line"> *&#x2F;</span><br><span class="line"></span><br><span class="line">@media (max-width: 600px) &#123;</span><br><span class="line">  .facet_sidebar &#123;</span><br><span class="line">    display: none;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="媒体类型"><a href="#媒体类型" class="headerlink" title="媒体类型"></a>媒体类型</h1><ul>
+<li>all 所有设备 默认</li>
+<li>braille 盲文</li>
+<li>embossed  盲文打印</li>
+<li>handheld  手持设备</li>
+<li>print 文档打印或打印预览模式</li>
+<li>projection  项目演示，比如幻灯</li>
+<li>screen  彩色屏幕</li>
+<li>speech  演讲</li>
+<li>tty 固定字母间距的网格的媒体，比如电传打字机</li>
+<li>tv 电视</li>
+</ul>
+<h1 id="css属性判断"><a href="#css属性判断" class="headerlink" title="css属性判断"></a>css属性判断</h1><p><img src="/2021/01/03/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/pic1.png" alt="图1"></p>
+<h1 id="逻辑操作符"><a href="#逻辑操作符" class="headerlink" title="逻辑操作符"></a>逻辑操作符</h1><p>操作符 not，and 和 only 可以用来构建复杂的媒体查询。<br>and 操作符用来把多个 媒体属性 组合起来，合并到同一条媒体查询中。只有当每个属性都为<br>真时，这条查询的结果才为真。<br>not 操作符用来对一条媒体查询的结果进行取反。<br>only 操作符表示仅在媒体查询匹配成功的情况下应用指定样式。可以通过它让选中的样式在老式浏览器中不被应用。<br>注意：若使用了 not 或 only 操作符，必须明确指定一个媒体类<br>型。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2021/01/03/git-message/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Meifang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Meifang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/03/git-message/" itemprop="url">Git_message</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-03T20:02:33+08:00">
+                2021-01-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:10:49+08:00">
+                2021-01-03
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2021/01/03/git-message/" class="leancloud_visitors" data-flag-title="Git_message">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count">次</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  491 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Commit message 包括三个部分：Header，Body 和 Footer。可以用下方的格式表示它的结构。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;&#x2F;&#x2F; 空一行&lt;body&gt;&#x2F;&#x2F; 空一行&lt;footer&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，Header 是必需的，Body 和 Footer 可以省略(默认忽略)，一般我们在 git commit 提交时指定的 -m 参数，就相当于默认指定 Header。<br>不管是哪一个部分，任何一行都不得超过72个字符（或100个字符）。这是为了避免自动换行影响美观。</p>
+<h1 id="格式示例"><a href="#格式示例" class="headerlink" title="格式示例"></a>格式示例</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">doc(README)：更新图标，整理格式</span><br><span class="line">refactor(auth)：修改签名算法为 hmac-sh1</span><br><span class="line">feat(auth)：签名算法</span><br><span class="line">refactor(account)：修改变量获取方法</span><br><span class="line">refactor(auth)：改为从数据库获取鉴权信息</span><br><span class="line">feat(config)：增加 auth 加密信息配置</span><br><span class="line">doc(auth)：修改鉴权算法说明</span><br><span class="line">doc(auth)：鉴权算法定义</span><br><span class="line">feat(account)：发送邮件验证码</span><br></pre></td></tr></table></figure>
+
+<h1 id="type"><a href="#type" class="headerlink" title="type"></a>type</h1><ul>
+<li>feat：新功能（feature）</li>
+<li>fix：修补bug</li>
+<li>docs：文档（documentation）</li>
+<li>style： 格式（不影响代码运行的变动）</li>
+<li>refactor：重构（即不是新增功能，也不是修改bug的代码变动）</li>
+<li>test：增加测试</li>
+<li>chore：构建过程或辅助工具的变动</li>
+</ul>
+<h1 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h1><p>scope用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，视项目不同而不同</p>
+<h1 id="subject"><a href="#subject" class="headerlink" title="subject"></a>subject</h1><p>subject是 commit 目的的简短描述，不超过50个字符。</p>
+<ul>
+<li>以动词开头，使用第一人称现在时，比如change，而不是changed或changes</li>
+<li>第一个字母小写</li>
+<li>结尾不加句号（.）</li>
+</ul>
+<h1 id="Commitizen"><a href="#Commitizen" class="headerlink" title="Commitizen"></a>Commitizen</h1><p>Commitizen是一个撰写合格 Commit message 的工具。<br>安装命令如下。</p>
+<figure class="highlight plain"><figcaption><span>npm install -g commitizen```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">然后，在项目目录里，运行下面的命令，使其支持 Angular 的 Commit message 格式。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;$ commitizen init cz-conventional-changelog --save --save-exact</span><br></pre></td></tr></table></figure>
+
+<p>以后，凡是用到git commit命令，一律改为使用git cz。这时，就会出现选项，用来生成符合格式的 Commit message。</p>
+<h1 id="revert"><a href="#revert" class="headerlink" title="revert"></a>revert</h1><p>修改上一次的提交</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revert: feat(pencil): add &#39;graphiteWidth&#39; option</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2020/12/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E6%B5%8F%E8%A7%88%E6%AC%A1%E6%95%B0%E5%8A%9F%E8%83%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -317,16 +1117,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/12/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E6%B5%8F%E8%A7%88%E6%AC%A1%E6%95%B0%E5%8A%9F%E8%83%BD/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/12/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%BB%9F%E8%AE%A1%E6%B5%8F%E8%A7%88%E6%AC%A1%E6%95%B0%E5%8A%9F%E8%83%BD/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -339,7 +1129,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -462,7 +1252,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" itemprop="url">学习网站汇总(持续更新中)</a></h1>
+                <a class="post-title-link" href="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" itemprop="url">学习网站汇总</a></h1>
         
 
         <div class="post-meta">
@@ -490,8 +1280,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-12-08T20:06:12+08:00">
-                2020-12-08
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:34:28+08:00">
+                2021-01-03
               </time>
             
           </span>
@@ -500,21 +1290,11 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
           
-             <span id="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" class="leancloud_visitors" data-flag-title="学习网站汇总(持续更新中)">
+             <span id="/2020/12/08/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" class="leancloud_visitors" data-flag-title="学习网站汇总">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -522,7 +1302,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -753,16 +1533,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/11/23/%E4%BD%BF%E7%94%A8GitHub%E4%BF%9D%E5%AD%98hexo%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/11/23/%E4%BD%BF%E7%94%A8GitHub%E4%BF%9D%E5%AD%98hexo%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -775,7 +1545,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -952,16 +1722,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/11/23/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%A4%E4%B8%AA%E8%B4%A6%E5%8F%B7%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5GitHub%E5%92%8Cgitlab/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/11/23/%E5%A6%82%E4%BD%95%E7%94%A8%E4%B8%A4%E4%B8%AA%E8%B4%A6%E5%8F%B7%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5GitHub%E5%92%8Cgitlab/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -974,7 +1734,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -1173,16 +1933,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -1195,7 +1945,7 @@
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -1428,16 +2178,6 @@ ps: 多刷新几遍.</li>
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -1450,7 +2190,7 @@ ps: 多刷新几遍.</li>
                
                  <span class="post-meta-item-text">阅读次数&#58;</span>
                
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">次</span>
              </span>
           
 
@@ -1637,7 +2377,7 @@ ps: 多刷新几遍.</li>
                 <a href="/archives">
                 <!-- <a href="/archives%7C%7C%20archive"> -->
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1648,7 +2388,7 @@ ps: 多刷新几遍.</li>
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1659,7 +2399,7 @@ ps: 多刷新几遍.</li>
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1706,7 +2446,7 @@ ps: 多刷新几遍.</li>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; 2020 &mdash; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1720,7 +2460,7 @@ ps: 多刷新几遍.</li>
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.6k</span>
+    <span title="Site words total count">5.2k</span>
   
 </div>
 
@@ -1734,6 +2474,8 @@ ps: 多刷新几遍.</li>
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
 
 
 
@@ -1872,28 +2614,6 @@ ps: 多刷新几遍.</li>
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'j2CiOXNrEaoxUCT3JS9W1uTw-gzGzoHsz',
-        appKey: 'TNnDfE2PxwHost4wz9IGSM53',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 

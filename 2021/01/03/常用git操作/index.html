@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="git," />
 
 
 
@@ -79,22 +79,17 @@
 
 
 
-<meta name="description" content="这是一篇介绍零基础搭建博客网站的文章，一是为了自己的搭建过程，防止将来忘记，二是为想要学习搭建个人博客的同学提供相关方法。 1. 前期准备工作1.1 相关的参考链接(可跳过) http:&#x2F;&#x2F;iissnan.com&#x2F;progit&#x2F; （了解即可，这个网址有较为全面的关于git的介绍） http:&#x2F;&#x2F;theme-next.iissnan.com&#x2F;getting-started.html 这个网站提供了设">
+<meta name="description" content="只有自己操作的分支（基础操作）123456789git pull  &#x2F;&#x2F;  从远程仓库抓取修改的内容，并把它合并到本地库git add .&#x2F;&#x2F; commit之前先&quot;git diff&quot;和&quot;git status&quot;看是否是包含且仅包含这次想commit的内容。git commit - m &quot;&quot;git pu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何使用hexo搭建个人博客一">
-<meta property="og:url" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/index.html">
+<meta property="og:title" content="常用Git操作">
+<meta property="og:url" content="https://wumeifang18.github.io/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Meifang">
-<meta property="og:description" content="这是一篇介绍零基础搭建博客网站的文章，一是为了自己的搭建过程，防止将来忘记，二是为想要学习搭建个人博客的同学提供相关方法。 1. 前期准备工作1.1 相关的参考链接(可跳过) http:&#x2F;&#x2F;iissnan.com&#x2F;progit&#x2F; （了解即可，这个网址有较为全面的关于git的介绍） http:&#x2F;&#x2F;theme-next.iissnan.com&#x2F;getting-started.html 这个网站提供了设">
-<meta property="og:image" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/getBashHere.png">
-<meta property="og:image" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/config1.png">
-<meta property="og:image" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/config2.png">
-<meta property="og:image" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/repo.png">
-<meta property="article:published_time" content="2020-09-28T14:40:00.000Z">
-<meta property="article:modified_time" content="2020-10-20T13:40:12.881Z">
+<meta property="og:description" content="只有自己操作的分支（基础操作）123456789git pull  &#x2F;&#x2F;  从远程仓库抓取修改的内容，并把它合并到本地库git add .&#x2F;&#x2F; commit之前先&quot;git diff&quot;和&quot;git status&quot;看是否是包含且仅包含这次想commit的内容。git commit - m &quot;&quot;git pu">
+<meta property="article:published_time" content="2021-01-03T12:19:01.000Z">
+<meta property="article:modified_time" content="2021-01-03T12:35:39.183Z">
 <meta property="article:author" content="Meifang">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/getBashHere.png">
 
 
 
@@ -124,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://wumeifang18.github.io/2020/09/28/如何使用hexo搭建个人博客一/"/>
+  <link rel="canonical" href="https://wumeifang18.github.io/2021/01/03/常用git操作/"/>
 
 
 
 
 
-  <title>如何使用hexo搭建个人博客一 | Meifang</title>
+  <title>常用Git操作 | Meifang</title>
   
 
 
@@ -267,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/">
+    <link itemprop="mainEntityOfPage" href="https://wumeifang18.github.io/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Meifang">
@@ -284,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何使用hexo搭建个人博客一</h1>
+          <h1 class="post-title" itemprop="name headline">常用Git操作</h1>
         
 
         <div class="post-meta">
@@ -296,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-28T22:40:00+08:00">
-                2020-09-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-03T20:19:01+08:00">
+                2021-01-03
               </time>
             
 
@@ -312,8 +307,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-10-20T21:40:12+08:00">
-                2020-10-20
+              <time title="更新于" itemprop="dateModified" datetime="2021-01-03T20:35:39+08:00">
+                2021-01-03
               </time>
             
           </span>
@@ -331,8 +326,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index">
-                    <span itemprop="name">博客搭建</span>
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
                   </a>
                 </span>
 
@@ -348,7 +343,7 @@
 
           
           
-             <span id="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/" class="leancloud_visitors" data-flag-title="如何使用hexo搭建个人博客一">
+             <span id="/2021/01/03/%E5%B8%B8%E7%94%A8git%E6%93%8D%E4%BD%9C/" class="leancloud_visitors" data-flag-title="常用Git操作">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -373,7 +368,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  816 字
+                  1.3k 字
                 </span>
               
 
@@ -389,7 +384,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -410,52 +405,38 @@
       
 
       
-        <p>这是一篇介绍零基础搭建博客网站的文章，一是为了自己的搭建过程，防止将来忘记，二是为想要学习搭建个人博客的同学提供相关方法。</p>
-<h1 id="1-前期准备工作"><a href="#1-前期准备工作" class="headerlink" title="1. 前期准备工作"></a>1. 前期准备工作</h1><h2 id="1-1-相关的参考链接-可跳过"><a href="#1-1-相关的参考链接-可跳过" class="headerlink" title="1.1 相关的参考链接(可跳过)"></a>1.1 相关的参考链接(可跳过)</h2><ol>
-<li><a href="http://iissnan.com/progit/" target="_blank" rel="noopener">http://iissnan.com/progit/</a> （了解即可，这个网址有较为全面的关于git的介绍）</li>
-<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a> 这个网站提供了设置hexo主题的方法。  </li>
-<li><a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">https://www.appinn.com/markdown/</a> 这是介绍markdown书写格式的网站   </li>
-<li><a href="https://www.jianshu.com/p/950f8f13a36c" target="_blank" rel="noopener">https://www.jianshu.com/p/950f8f13a36c</a>  hexo博客图片问题</li>
-</ol>
-<h2 id="1-2-准备工作"><a href="#1-2-准备工作" class="headerlink" title="1.2 准备工作"></a>1.2 准备工作</h2><p>本文针对windows系统，在开始之前，你需要进行以下操作</p>
-<h3 id="1-2-1-注册一个github账号"><a href="#1-2-1-注册一个github账号" class="headerlink" title="1.2.1 注册一个github账号"></a>1.2.1 注册一个github账号</h3><p>去官网注册即可 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
-<h3 id="1-2-2-安装git"><a href="#1-2-2-安装git" class="headerlink" title="1.2.2 安装git"></a>1.2.2 安装git</h3><p>网址：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br>选择相应的版本，需要外网(fq)，不然下载速度很慢。也可以通过其他渠道。<br>安装git可以参考这篇博客：<a href="https://www.cnblogs.com/ximiaomiao/p/7140456.html。" target="_blank" rel="noopener">https://www.cnblogs.com/ximiaomiao/p/7140456.html。</a>  </p>
-<p>Git安装之后需要进行一些基本信息设置</p>
-<ol>
-<li>设置用户名：git  config – global  user.name  ‘你再github上注册的用户名’;</li>
-<li>设置用户邮箱：git  config – global  user.email  ‘注册时候的邮箱’;</li>
-</ol>
-<h3 id="1-2-3-使用SSH密钥连接Github"><a href="#1-2-3-使用SSH密钥连接Github" class="headerlink" title="1.2.3 使用SSH密钥连接Github"></a>1.2.3 使用SSH密钥连接Github</h3><p>参考教程：<a href="https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html" target="_blank" rel="noopener">https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html</a><br>使用SSH Keys在本机和GitHub之间建立一个安全的连接。这样在后面更新博客内容时就不用每次都输入用户名和密码了。</p>
-<h3 id="1-2-4-安装-node-js-cnpm"><a href="#1-2-4-安装-node-js-cnpm" class="headerlink" title="1.2.4 安装 node.js, cnpm"></a>1.2.4 安装 node.js, cnpm</h3><p>node官网：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a> 选择LTS(长期支持(Long Term Support)) 版本<br>可使用git检测是否安装成功：git中输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-<p>如果返回版本号表示node安装成功。再输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p>检查npm的版本号<br>安装npm的淘宝镜像源cnpm(需要fq,不然网速慢，如果失败，多试几次就好了)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>等待安装结束<br>输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm</span><br></pre></td></tr></table></figure>
-<p>查看cnpm的信息<br>用同样的方法检测是否安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-<h3 id="1-2-5-安装hexo"><a href="#1-2-5-安装hexo" class="headerlink" title="1.2.5 安装hexo"></a>1.2.5 安装hexo</h3><p>输入安装hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<p>检测hexo的版本。</p>
-<h3 id="1-2-5-本地部署"><a href="#1-2-5-本地部署" class="headerlink" title="1.2.5 本地部署"></a>1.2.5 本地部署</h3><p>在F盘或者D盘建立文件夹blog，相当于你博客的本地仓库。在文件夹内右击-git bash here 进入git<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/getBashHere.png" alt="图一"><br>初始化hexo 只第一次需要初始化，后面更新文章的时候不用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>启动hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>在浏览器中打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可以看到自己的网站了。<br>ctrl + c 结束hexo</p>
-<h1 id="3-部署到GitHub"><a href="#3-部署到GitHub" class="headerlink" title="3.部署到GitHub"></a>3.部署到GitHub</h1><ol>
-<li>在github上创建一个 昵称+github.io 的仓库(repository)。<br><strong><em>注意：一定要命名为昵称+.github.io，不然会出错，因为一个giuhub账户只能申请一个个人网址，默认为https://昵称.github.io/</em></strong></li>
-<li>在blog仓库目录下安装hexo部署插件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
-<li>找到blog文件夹下的 _config.yml文件，使用代码编译器打开(VC 或 IntelliJ IDEA 等) 找到最底部的代码，<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/config1.png" alt="图二"><br>补充为<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/config2.png" alt="图三"></li>
-</ol>
-<p>其中repo那一项为github上创建仓库的SSH<br><img src="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/repo.png" alt="图四"></p>
-<p>在blog目录下打开git<br>部署hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>部署成功以后就可以通过网址 https://昵称.github.io/ 打开你的博客了。</p>
+        <h1 id="只有自己操作的分支（基础操作）"><a href="#只有自己操作的分支（基础操作）" class="headerlink" title="只有自己操作的分支（基础操作）"></a>只有自己操作的分支（基础操作）</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">git pull  &#x2F;&#x2F;  从远程仓库抓取修改的内容，并把它合并到本地库</span><br><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; commit之前先&quot;git diff&quot;和&quot;git status&quot;看是否是包含且仅包含这次想commit的内容。</span><br><span class="line"></span><br><span class="line">git commit - m &quot;&quot;</span><br><span class="line"></span><br><span class="line">git push  &#x2F;&#x2F; 将更改推送到远程公共仓库</span><br></pre></td></tr></table></figure>
 
+<h1 id="和别人同时操作的分支"><a href="#和别人同时操作的分支" class="headerlink" title="和别人同时操作的分支"></a>和别人同时操作的分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">git stash  &#x2F;&#x2F; 保存本地新增还未提交的代码</span><br><span class="line"></span><br><span class="line">git pull -r </span><br><span class="line"></span><br><span class="line">git stash pop</span><br><span class="line"></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line">git commit - m&quot;&quot;  &#x2F;&#x2F;Git message </span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>Stash可以很好的解决这样的问题。当你不想提交当前完成了一半的代码， 但是你不得不修改一个紧急的bug时，可以使用’git stash’将你当时未提交到本地（和服务器）的代码推入到git的栈中，这时候你的工作区间和上一次提交的内容是完全一样的，所以可以放心的修bug，等到修完bug，提交到服务器上后，再使用’git stash  apply ‘将以前保存的工作应用回来。当你多次使用’git stash’命令后，你 的栈里将充满了未提交的代码，这时候你会对将哪个版本应用回来有些困惑，’git stash list’命令可以将当前的Git栈信息打印出来，你只需要将找到对应的版本号，例如使用’git stash apply stash@{1}’就可以将你指定版本号为stash@{1}的工作取出来，当你将所有的栈都应用回来的时候，可以使用’git stash clear’来将栈清空</p>
+<h1 id="同步-master-分支的代码"><a href="#同步-master-分支的代码" class="headerlink" title="同步 master 分支的代码"></a>同步 master 分支的代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br><span class="line"></span><br><span class="line">git checkout master</span><br><span class="line">git pull origin</span><br><span class="line"></span><br><span class="line">git checkout feature_bugfix  </span><br><span class="line">git merge master  &#x2F;&#x2F;合并master到分支，</span><br><span class="line"></span><br><span class="line">git status</span><br><span class="line">&#x2F;&#x2F;查看冲突</span><br><span class="line">&#x2F;&#x2F;修改冲突的文件</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; head</span><br><span class="line">当前分支</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">要合并的分支</span><br><span class="line">&gt;&gt;&gt;&gt;master</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;修改后，</span><br><span class="line"></span><br><span class="line">git add 文件路径</span><br><span class="line"></span><br><span class="line">git restore 文件路径</span><br><span class="line"></span><br><span class="line">git commit -m &quot;conflict fixed&quot;</span><br><span class="line"></span><br><span class="line">git push origin feature_bugfix</span><br><span class="line"></span><br><span class="line">git merge --abort &#x2F;&#x2F;放弃合并</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>键盘输入i，进入insert状态，在该状态下你可以修改控制台中的文字，填你想填写的内容</li>
+<li>输入完之后，按esc退出insert状态</li>
+<li>按shift + :（注意：当前应处于英文输入法状态），当底部出现冒号之后，再输入w(保存)q(退出)，回车即可</li>
+</ul>
+<h1 id="创建和删除分支"><a href="#创建和删除分支" class="headerlink" title="创建和删除分支"></a>创建和删除分支</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;在创建新分支之前要 git commit 一次，这样之前分支的文件就不会被带到新的分支</span><br><span class="line">git co -b test  &#x2F;&#x2F; 创建名为test的分支(?基于当前分支？)</span><br><span class="line"></span><br><span class="line">git checkout -b bugFix master &#x2F;&#x2F;基于master分支创建新的分支</span><br><span class="line"></span><br><span class="line">git push origin feature_bugfix &#x2F;&#x2F;将新分支推到远程分支</span><br></pre></td></tr></table></figure>
+
+
+<p>当一个分支被废弃时,我们要做的是删除分支,在彻底删除一个分支时,需要三个步骤</p>
+<ul>
+<li>删除本地分支 (不能位于当前要删除的分支)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch --delete bugFix  &#x2F;&#x2F;git branch -d bugFix  git branch -D bugFix</span><br><span class="line">&#x2F;&#x2F;在使用--delete删除分支时,该分支必须完全和它的上游分支merge完成(了解上游分支,可以点击查看链接),如果没有上游分支,必须要和HEAD完全merge</span><br><span class="line"></span><br><span class="line">-D是--delete --force的缩写,这样写可以在不检查merge状态的情况下删除分支</span><br><span class="line">--force简写-f,作用是将当前branch重置到初始点(startpoint),如果不使用--force的话,git分支无法修改一个已经存在的分支.</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除远程分支</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>push origin --delete bugFix```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 删除本地追踪分支,即追踪远程master的追踪分支origin&#x2F;master</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;git branch -d -r origin&#x2F;&lt;remote branch name&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">git  clone  git@gitr:pro</span><br><span class="line"></span><br><span class="line">git  status &#x2F; git st   &#x2F;&#x2F;  查看状态</span><br><span class="line"></span><br><span class="line">git  checkout &#x2F; git co &#x2F;&#x2F; 作用：一是在不同的branch之间进行切换  二是还原代码的作用</span><br><span class="line"></span><br><span class="line">git  diff &#x2F; git df &#x2F;&#x2F;  查看改动</span><br><span class="line"></span><br><span class="line">git  add  abc.txt  &#x2F;&#x2F;  添加修改到缓存，abc.txt为新文件文件名，可变。</span><br><span class="line"></span><br><span class="line">git add  -a &#x2F;&#x2F; (谨慎使用) 添加所有文件到本地库，除了.gitignore文件中的文件</span><br><span class="line"></span><br><span class="line">git  commit  &#x2F; git  ci &#x2F;&#x2F; 提交改变到本地库</span><br><span class="line"></span><br><span class="line">git add</span><br><span class="line"></span><br><span class="line">git  log &#x2F;&#x2F; 查看log日志，查看提交记录</span><br><span class="line"></span><br><span class="line">git log -p  &#x2F;&#x2F;查看日志和改动</span><br><span class="line"></span><br><span class="line">git log --stat   &#x2F;&#x2F;可以查看每次commit修改了哪些文件</span><br><span class="line"></span><br><span class="line">git pull 等价于 git fetch + git merge o&#x2F;master</span><br><span class="line"></span><br><span class="line">gitignore文件  &#x2F;&#x2F; 系统中经常会出现一些.tmp .o或者之类的临时文件，我们可以在顶层工作目录中编辑一个.gitignore文件来告诉系统我们需要忽略哪些类型的文件。</span><br></pre></td></tr></table></figure>
+
+<h1 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git  reset  --hard   回退以前的某个版本（本地仓库） </span><br><span class="line"></span><br><span class="line">eg：</span><br><span class="line">git reset -hard HEAD~3 &#x2F;&#x2F; 将最新的3次提交全部重置，就像没有提交过一样</span><br><span class="line">git reset -hard commit (&amp;&amp;&amp;&amp;&amp;**$%^)  &#x2F;&#x2F; 回退到括号中指定版本号的版本</span><br></pre></td></tr></table></figure>
+
+<h1 id="关闭端口"><a href="#关闭端口" class="headerlink" title="关闭端口"></a>关闭端口</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo lsof -i :8080 &#x2F;&#x2F;查找8080端口</span><br><span class="line"></span><br><span class="line"> kill -9 57178（PID）  &#x2F;&#x2F;关闭端口</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -472,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/git/" rel="tag"># git</a>
           
         </div>
       
@@ -485,15 +466,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2021/01/03/async-await/" rel="next" title="Async/await">
+                <i class="fa fa-chevron-left"></i> Async/await
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/09/28/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/" rel="prev" title="如何使用Hexo搭建个人博客二">
-                如何使用Hexo搭建个人博客二 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -645,7 +626,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-前期准备工作"><span class="nav-number">1.</span> <span class="nav-text">1. 前期准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-相关的参考链接-可跳过"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 相关的参考链接(可跳过)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-准备工作"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-注册一个github账号"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 注册一个github账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-安装git"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2 安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-3-使用SSH密钥连接Github"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.2.3 使用SSH密钥连接Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-4-安装-node-js-cnpm"><span class="nav-number">1.2.4.</span> <span class="nav-text">1.2.4 安装 node.js, cnpm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-5-安装hexo"><span class="nav-number">1.2.5.</span> <span class="nav-text">1.2.5 安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-5-本地部署"><span class="nav-number">1.2.6.</span> <span class="nav-text">1.2.5 本地部署</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-部署到GitHub"><span class="nav-number">2.</span> <span class="nav-text">3.部署到GitHub</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#只有自己操作的分支（基础操作）"><span class="nav-number">1.</span> <span class="nav-text">只有自己操作的分支（基础操作）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#和别人同时操作的分支"><span class="nav-number">2.</span> <span class="nav-text">和别人同时操作的分支</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#同步-master-分支的代码"><span class="nav-number">3.</span> <span class="nav-text">同步 master 分支的代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建和删除分支"><span class="nav-number">4.</span> <span class="nav-text">创建和删除分支</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">5.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回退版本"><span class="nav-number">6.</span> <span class="nav-text">回退版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关闭端口"><span class="nav-number">7.</span> <span class="nav-text">关闭端口</span></a></li></ol></div>
             
 
           </div>
